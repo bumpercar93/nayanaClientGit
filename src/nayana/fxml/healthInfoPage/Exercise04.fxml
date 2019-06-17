@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="685.0" prefWidth="996.0" style="-fx-background-color: #f6f9fc;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nayana.controller.healthInfoPage.Exercise04Controller">
+   <children>
+      <VBox prefHeight="685.0" prefWidth="996.0">
+         <children>
+            <Pane>
+               <children>
+                  <Label text="CUSTOM EXERCISE" textFill="#8393a5">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="413.0" layoutY="92.0" text="STEP 04" textFill="#8393a5" />
+                  <Label layoutX="272.0" layoutY="130.0" style="-fx-font-weight: bolder;" text="님의 질병 유형을 선택해 주세요" textFill="#51637b">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <graphic>
+                        <Label fx:id="DietName" style="-fx-font-weight: bolder;" text="박서경" textFill="#51637b">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </graphic>
+                  </Label>
+                  <ImageView fx:id="img01" fitHeight="116.0" fitWidth="120.0" layoutX="248.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../util/images/dss_01.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img02" fitHeight="116.0" fitWidth="120.0" layoutX="378.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../util/images/dss_02.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img03" fitHeight="116.0" fitWidth="120.0" layoutX="508.0" layoutY="192.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../util/images/dss_03.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img04" fitHeight="116.0" fitWidth="120.0" layoutX="248.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../util/images/dss_04.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img05" fitHeight="116.0" fitWidth="120.0" layoutX="378.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../util/images/dss_05.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="img06" fitHeight="116.0" fitWidth="120.0" layoutX="508.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../util/images/dss_06.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="btnExeNext" layoutX="443.0" layoutY="492.0" mnemonicParsing="false" onAction="#btnExeNextClicked" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: #3f60f1;" text="Next" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnExePrev" layoutX="323.0" layoutY="492.0" mnemonicParsing="false" onAction="#btnExePrevClicked" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: #3f60f1;" text="Prev" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnExeDss01" layoutX="248.0" layoutY="192.0" mnemonicParsing="false" onAction="#btnExeDss01Clicked" prefHeight="116.0" prefWidth="120.0" style="-fx-background-color: transparent;" />
+                  <Button fx:id="btnExeDss02" layoutX="378.0" layoutY="192.0" mnemonicParsing="false" onAction="#btnExeDss02Clicked" prefHeight="116.0" prefWidth="120.0" style="-fx-background-color: transparent;" />
+                  <Button fx:id="btnExeDss03" layoutX="508.0" layoutY="192.0" mnemonicParsing="false" onAction="#btnExeDss03Clicked" prefHeight="116.0" prefWidth="120.0" style="-fx-background-color: transparent;" />
+                  <Button fx:id="btnExeDss04" layoutX="248.0" layoutY="318.0" mnemonicParsing="false" onAction="#btnExeDss04Clicked" prefHeight="116.0" prefWidth="120.0" style="-fx-background-color: transparent;" />
+                  <Button fx:id="btnExeDss05" layoutX="378.0" layoutY="318.0" mnemonicParsing="false" onAction="#btnExeDss05Clicked" prefHeight="116.0" prefWidth="120.0" style="-fx-background-color: transparent;" />
+                  <Button fx:id="btnExeDss06" layoutX="508.0" layoutY="318.0" mnemonicParsing="false" onAction="#btnExeDss06Clicked" prefHeight="116.0" prefWidth="120.0" style="-fx-background-color: transparent;" />
+                  <Label layoutY="600.0" text="© 2019 MyData Health Data Management" textFill="#8393a5" />
+                  <ImageView fitHeight="22.0" fitWidth="98.0" layoutX="780.0" layoutY="596.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../util/images/tail_logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+         <padding>
+            <Insets left="60.0" right="60.0" top="40.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

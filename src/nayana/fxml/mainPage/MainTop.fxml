@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderpaneTop" prefHeight="800.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nayana.controller.mainPage.MainTopController">
+   <right>
+      <AnchorPane prefWidth="294.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane layoutX="10.0">
+               <children>
+                  <Label layoutX="12.0" layoutY="25.0" text="Nayana ChatBot TToG" textFill="#5d6c83">
+                     <font>
+                        <Font name="Noto Sans CJK KR Medium" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="53.0" text="궁금하신 사항을 Nayana 챗봇에게 물어보세요" textFill="#828d9c">
+                     <font>
+                        <Font name="Noto Sans CJK KR DemiLight" size="12.0" />
+                     </font>
+                  </Label>
+                  <Line endX="245.0" endY="1.0" fill="#f0f2f5" layoutX="22.0" layoutY="90.0" startX="-13.0" startY="1.0" stroke="#c3c8d0" strokeMiterLimit="5.0" />
+               </children>
+            </Pane>
+            <ImageView fitHeight="21.0" fitWidth="28.0" layoutX="18.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../util/images/chat_icon_01.png" />
+               </image>
+            </ImageView>
+            <TextArea fx:id="chatbotTxtArea" layoutX="17.0" layoutY="140.0" prefHeight="472.0" prefWidth="260.0" style="-fx-background-color: #fff; -fx-highlight-fill: #fff;">
+               <font>
+                  <Font size="12.0" />
+               </font></TextArea>
+            <TextField fx:id="chatbotTxtField" layoutX="18.0" layoutY="622.0" prefHeight="37.0" prefWidth="195.0" style="-fx-background-color: #f6f9fc;" />
+            <Button fx:id="chatbotBtn" layoutX="220.0" layoutY="622.0" mnemonicParsing="false" onAction="#chatbotBtnClicked" prefHeight="36.0" prefWidth="57.0" style="-fx-background-color: #3d66ec; -fx-text-fill: white;" text="전송" />
+            <Label layoutX="54.0" layoutY="117.0" text="Nayana ChatBot" textFill="#3e66ec">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </right>
+   <top>
+      <VBox prefHeight="115.0" prefWidth="1300.0" BorderPane.alignment="CENTER">
+         <children>
+            <ToolBar prefHeight="60.0" prefWidth="1300.0" style="-fx-background-color: #3d66ec;">
+               <items>
+                  <HBox>
+                     <children>
+                        <ImageView fx:id="mainlogo" fitHeight="30.0" fitWidth="123.0" onMouseClicked="#MainGoGo" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../util/images/main_logo.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets top="17.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label opacity="0.8" style="-fx-text-fill: #f0f2f9;" text="MyData Health Data Management">
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets top="26.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets right="505.0" />
+                     </padding>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <ImageView fitHeight="60.0" fitWidth="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../util/images/main_top_line.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="28.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fx:id="miseImg1" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../util/images/sad.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets top="15.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label fx:id="miseTxt1" style="-fx-text-fill: #fff;" text="공기 나쁨">
+                           <padding>
+                              <Insets left="10.0" top="21.0" />
+                           </padding>
+                           <font>
+                              <Font name="Noto Sans CJK KR Medium" size="13.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="60.0" fitWidth="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../util/images/main_top_line.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <ImageView fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../util/images/user_icon_01.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets top="2.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                     <padding>
+                        <Insets left="20.0" top="17.0" />
+                     </padding>
+                  </HBox>
+                  <VBox prefWidth="115.0">
+                     <children>
+                        <Label fx:id="nameTxt" style="-fx-text-fill: #fff;" text="Park Seo Kyoung">
+                           <VBox.margin>
+                              <Insets top="4.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="12.0" />
+                           </font></Label>
+                        <Label style="-fx-text-fill: #84adfb;" text="NAYANA User">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="8.0" top="14.0" />
+                     </padding>
+                  </VBox>
+                  <HBox>
+                     <children>
+                        <ImageView fx:id="logoutBtn" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#Logout" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../util/images/btn_logout.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets top="2.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                     <padding>
+                        <Insets left="25.0" right="30.0" top="17.0" />
+                     </padding>
+                  </HBox>
+               </items>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </ToolBar>
+            <HBox depthTest="DISABLE" prefHeight="55.0" prefWidth="1300.0" style="-fx-effect: dropshadow(three-pass-box , rgba(193, 202, 233, 0.1) , 5, 0 , 0 ,3); -fx-background-color: #fff;">
+               <children>
+                  <MenuButton fx:id="healthSearchList" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-text-fill: #f00;" text="건강데이터 조회">
+                     <items>
+                        <MenuItem fx:id="healthSearchMenu" mnemonicParsing="false" onAction="#healthSearch" text="건강데이터 조회 및 다운로드" />
+                        <MenuItem fx:id="healthTotalMenu" mnemonicParsing="false" onAction="#healthTotal" text="나의 건강데이터 다운로드" />
+                        <MenuItem fx:id="Solution" mnemonicParsing="false" onAction="#clickSolution" text="건강테이터 솔루션" />
+                     </items>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Noto Sans CJK KR DemiLight" size="13.0" />
+                     </font>
+                  </MenuButton>
+                  <MenuButton fx:id="healthGiveList" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-text-fill: #8393a5;" text="건강 정보 제공">
+                     <items>
+                        <MenuItem fx:id="foodCucheonMenu" mnemonicParsing="false" onAction="#foodCucheon" text="맞춤식단" />
+                        <MenuItem fx:id="sportsCucheonMenu" mnemonicParsing="false" onAction="#sprotsCucheon" text="추천운동" />
+                        <MenuItem fx:id="meTestMenu" mnemonicParsing="false" onAction="#meTest" text="자가진단" />
+                     </items>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Noto Sans CJK KR DemiLight" size="13.0" />
+                     </font>
+                  </MenuButton>
+                  <MenuButton fx:id="communityList" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-text-fill: #8393a5;" text="커뮤니티">
+                     <items>
+                        <MenuItem fx:id="HealthcareDataMenu" mnemonicParsing="false" onAction="#healthcareData" text="헬스케어정보" />
+                        <MenuItem fx:id="noticeMenu" mnemonicParsing="false" onAction="#notice" text="공지사항" />
+                     </items>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Noto Sans CJK KR DemiLight" size="13.0" />
+                     </font>
+                  </MenuButton>
+                  <MenuButton fx:id="mypageList" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-text-fill: #8393a5;" text="마이페이지">
+                     <font>
+                        <Font name="Noto Sans CJK KR DemiLight" size="13.0" />
+                     </font>
+                     <items>
+                        <MenuItem fx:id="myPageMenu" mnemonicParsing="false" onAction="#myPage" text="마이페이지" />
+                     </items>
+                  </MenuButton>
+               </children>
+               <padding>
+                  <Insets left="20.0" top="14.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+</BorderPane>

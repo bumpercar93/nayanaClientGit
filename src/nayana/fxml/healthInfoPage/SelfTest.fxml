@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="685.0" prefWidth="996.0" style="-fx-background-color: #f6f9fc;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nayana.controller.healthInfoPage.SelfTestController">
+   <children>
+      <VBox>
+         <children>
+            <Pane>
+               <children>
+                  <Label text="SELF-TEST" textFill="#8393a5" />
+                  <Label layoutY="60.0" text="자가진단" textFill="#51637b">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1.0" layoutY="87.0" text="Several Self-Test" textFill="#8393a5" />
+                  <Rectangle fx:id="rec1" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="50.0" layoutY="150.0" stroke="#e6e7e8" strokeType="INSIDE" width="834.0" />
+                  <Label fx:id="num1" alignment="CENTER" contentDisplay="CENTER" layoutX="17.0" layoutY="167.0" prefWidth="22.0" text="1" textFill="#51637b" />
+                  <Label fx:id="testLabel1" layoutX="56.0" layoutY="167.0" text="우울증 자가진단" textFill="#3d66ec">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lastTest1" layoutX="408.0" layoutY="167.0" text="마지막 검사 일시" textFill="#8393a5">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lastDate1" layoutX="511.0" layoutY="167.0" textFill="#667483">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="startBtn1" layoutX="670.0" layoutY="163.0" mnemonicParsing="false" onAction="#clickStartBtn1" style="-fx-background-color: transparent;" text="START" textFill="#3d66ec">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="lastResBtn1" layoutX="724.0" layoutY="163.0" mnemonicParsing="false" onAction="#clickLastResBtn1" style="-fx-background-color: transparent;" text="LAST RESULT" textFill="#2f3f72">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+                  <Label layoutY="598.0" text="© 2019 MyData Health Data Management" textFill="#8393a5" />
+                  <ImageView fitHeight="22.0" fitWidth="98.0" layoutX="736.0" layoutY="596.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../util/images/tail_logo.png" />
+                     </image>
+                  </ImageView>
+                  <Rectangle fx:id="rec2" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="50.0" layoutY="210.0" stroke="#e6e7e8" strokeType="INSIDE" width="834.0" />
+                  <Label fx:id="num2" alignment="CENTER" contentDisplay="CENTER" layoutX="17.0" layoutY="228.0" prefWidth="22.0" text="2" textFill="#51637b" />
+                  <Label fx:id="testLabel2" layoutX="56.0" layoutY="228.0" text="공황장애 자가진단" textFill="#3d66ec">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lastTest2" layoutX="408.0" layoutY="228.0" text="마지막 검사 일시" textFill="#8393a5">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lastDate2" layoutX="511.0" layoutY="228.0" textFill="#667483">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="startBtn2" layoutX="670.0" layoutY="225.0" mnemonicParsing="false" onAction="#clickStartBtn2" style="-fx-background-color: transparent;" text="START" textFill="#3d66ec">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="lastResBtn2" layoutX="724.0" layoutY="225.0" mnemonicParsing="false" onAction="#clickLastResBtn2" style="-fx-background-color: transparent;" text="LAST RESULT" textFill="#2f3f72">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+                  <Rectangle fx:id="rec3" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="50.0" layoutY="270.0" stroke="#e6e7e8" strokeType="INSIDE" width="834.0" />
+                  <Label fx:id="num3" alignment="CENTER" contentDisplay="CENTER" layoutX="17.0" layoutY="290.0" prefWidth="22.0" text="3" textFill="#51637b" />
+                  <Label fx:id="testLabel3" layoutX="56.0" layoutY="290.0" text="불면증 자가진단" textFill="#3d66ec">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lastTest3" layoutX="408.0" layoutY="290.0" text="마지막 검사 일시" textFill="#8393a5">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lastDate3" layoutX="511.0" layoutY="290.0" textFill="#667483">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="startBtn3" layoutX="670.0" layoutY="285.0" mnemonicParsing="false" onAction="#clickStartBtn3" style="-fx-background-color: transparent;" text="START" textFill="#3d66ec">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="lastResBtn3" layoutX="724.0" layoutY="285.0" mnemonicParsing="false" onAction="#clickLastResBtn3" style="-fx-background-color: transparent;" text="LAST RESULT" textFill="#2f3f72">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+                  <Rectangle fx:id="rec4" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="50.0" layoutY="330.0" stroke="#e6e7e8" strokeType="INSIDE" width="834.0" />
+                  <Label fx:id="num4" alignment="CENTER" contentDisplay="CENTER" layoutX="17.0" layoutY="348.0" prefWidth="22.0" text="4" textFill="#51637b" />
+                  <Label fx:id="testLabel4" layoutX="56.0" layoutY="348.0" text="조울증 자가진단" textFill="#3d66ec">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lastTest4" layoutX="408.0" layoutY="350.0" text="마지막 검사 일시" textFill="#8393a5">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lastDate4" layoutX="511.0" layoutY="350.0" textFill="#667483">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="startBtn4" layoutX="670.0" layoutY="347.0" mnemonicParsing="false" onAction="#clickStartBtn4" style="-fx-background-color: transparent;" text="START" textFill="#3d66ec">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="lastResBtn4" layoutX="724.0" layoutY="347.0" mnemonicParsing="false" onAction="#clickLastResBtn4" style="-fx-background-color: transparent;" text="LAST RESULT" textFill="#2f3f72">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+                  <Rectangle fx:id="rec5" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="50.0" layoutY="390.0" stroke="#e6e7e8" strokeType="INSIDE" width="834.0" />
+                  <Label fx:id="num5" alignment="CENTER" contentDisplay="CENTER" layoutX="17.0" layoutY="410.0" prefWidth="22.0" text="5" textFill="#51637b" />
+                  <Label fx:id="testLabel5" layoutX="56.0" layoutY="410.0" text="탈모 자가진단" textFill="#3d66ec">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lastTest5" layoutX="408.0" layoutY="410.0" text="마지막 검사 일시" textFill="#8393a5">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lastDate5" layoutX="511.0" layoutY="410.0" textFill="#667483">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="startBtn5" layoutX="670.0" layoutY="405.0" mnemonicParsing="false" onAction="#clickStartBtn5" style="-fx-background-color: transparent;" text="START" textFill="#3d66ec">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="lastResBtn5" layoutX="724.0" layoutY="405.0" mnemonicParsing="false" onAction="#clickLastResBtn5" style="-fx-background-color: transparent;" text="LAST RESULT" textFill="#2f3f72">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+         <padding>
+            <Insets left="80.0" right="80.0" top="40.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

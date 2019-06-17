@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="685.0" prefWidth="996.0" style="-fx-background-color: #f6f9fc;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nayana.controller.mydataPage.SolutionController">
+   <children>
+      <VBox>
+         <children>
+            <Pane>
+               <children>
+                  <Label text="HEALTH DATA CHECK" textFill="#8393a5" />
+                  <Label layoutY="60.0" text="건강데이터 조회 및 활용" textFill="#51637b">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1.0" layoutY="87.0" text="Health data retrieval and utilization" textFill="#8393a5" />
+                  <Label layoutY="598.0" text="© 2019 MyData Health Data Management" textFill="#8393a5" />
+                  <ImageView fitHeight="22.0" fitWidth="98.0" layoutX="736.0" layoutY="596.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../util/images/tail_logo.png" />
+                     </image>
+                  </ImageView>
+                  <PieChart fx:id="pieChart" layoutX="45.0" layoutY="120.0" prefHeight="300.0" prefWidth="350.0" style="-fx-border-color: black;" />
+                  <BarChart fx:id="barChart" layoutX="425.0" layoutY="111.0" prefHeight="332.0" prefWidth="408.0">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" />
+                    </yAxis>
+                  </BarChart>
+                  <Label fx:id="pieChartLabel" layoutX="45.0" layoutY="437.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label fx:id="barChartLabel" layoutX="448.0" layoutY="437.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font></Label>
+                  <Label fx:id="pieLabelFisrt" layoutX="308.0" layoutY="437.0" textFill="RED">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="pieChartLabel2" layoutX="353.0" layoutY="437.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="barChartFirst" layoutX="636.0" layoutY="437.0" textFill="RED">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="barChartLabel2" layoutX="681.0" layoutY="437.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="45.0" fitWidth="45.0" layoutX="41.0" layoutY="509.0">
+                     <image>
+                        <Image url="@../../../util/images/exclamation-mark%20(1).png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="MustLabel" layoutX="101.0" layoutY="509.0" text="20대의 필수 섭취 영양소는 ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="MustLabelRes" layoutX="311.0" layoutY="509.0" text="비타민, 오메가3" textFill="#3d66ec">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="GoodFood" layoutX="101.0" layoutY="536.0" text="20대의 건강에 좋은 음식은">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="GoodFoodRes" layoutX="310.0" layoutY="536.0" text="시금치, 호두" textFill="#3d66ec">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+         <padding>
+            <Insets left="80.0" right="80.0" top="40.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

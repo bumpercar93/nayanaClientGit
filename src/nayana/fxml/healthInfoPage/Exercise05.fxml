@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="685.0" prefWidth="996.0" style="-fx-background-color: #f6f9fc;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nayana.controller.healthInfoPage.Exercise05Controller">
+   <children>
+      <VBox prefHeight="685.0" prefWidth="996.0" style="-fx-background-color: #f6f9fc;">
+         <children>
+            <Pane>
+               <children>
+                  <Label text="CUSTOM EXERCISE" textFill="#8393a5">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="354.0" layoutY="58.0" text="RECOMMENDED EXERCISE" textFill="#8393a5" />
+                  <Label layoutX="292.0" layoutY="88.0" style="-fx-font-weight: bolder;" text="님을 위한 맞춤 운동 입니다" textFill="#51637b">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <graphic>
+                        <Label fx:id="DietName" style="-fx-font-weight: bolder;" text="박서경" textFill="#51637b">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </graphic>
+                  </Label>
+                  <Line endX="319.0" layoutX="444.0" layoutY="144.0" startX="-332.0" stroke="#8393a5" />
+                  <ImageView fx:id="exeImg01" fitHeight="146.0" fitWidth="280.0" layoutX="112.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="exeTitle01" layoutX="412.0" layoutY="175.0" textFill="#51637b">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="exeCon01" layoutX="412.0" layoutY="207.0" lineSpacing="4.0" prefHeight="104.0" prefWidth="347.0" textFill="#6d7986" wrapText="true">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="exeImg02" fitHeight="146.0" fitWidth="280.0" layoutX="112.0" layoutY="332.0" pickOnBounds="true" preserveRatio="true" />
+                  <Label fx:id="exeTitle02" layoutX="412.0" layoutY="332.0" textFill="#51637b">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="exeCon02" layoutX="412.0" layoutY="364.0" lineSpacing="4.0" prefHeight="104.0" prefWidth="347.0" textFill="#6d7986" wrapText="true">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Label>
+                  <Line endX="319.0" layoutX="440.0" layoutY="499.0" startX="-332.0" stroke="#8393a5" />
+                  <Button fx:id="btnDietHome" layoutX="443.0" layoutY="530.0" mnemonicParsing="false" onAction="#btnDietHomeClicked" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: #3f60f1;" text="메인으로" textFill="WHITE">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnDietHome1" layoutX="323.0" layoutY="530.0" mnemonicParsing="false" onAction="#btnDietHome1Clicked" prefHeight="35.0" prefWidth="110.0" style="-fx-background-color: #3f60f1;" text="처음으로" textFill="WHITE">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+                  <Label layoutY="600.0" text="© 2019 MyData Health Data Management" textFill="#8393a5" />
+                  <ImageView fitHeight="22.0" fitWidth="98.0" layoutX="780.0" layoutY="596.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../util/images/tail_logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+         <padding>
+            <Insets left="60.0" right="60.0" top="40.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

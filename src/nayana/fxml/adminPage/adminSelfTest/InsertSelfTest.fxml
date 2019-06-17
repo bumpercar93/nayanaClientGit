@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="nayana.controller.adminPage.adminSelfTest.InsertSelfTestController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="685.0" prefWidth="996.0" style="-fx-background-color: #f6f9fc;">
+         <children>
+            <VBox>
+               <children>
+                  <Pane>
+                     <children>
+                        <Label text="SELF-TEST" textFill="#8393a5" />
+                        <Label layoutY="60.0" text="자가진단" textFill="#51637b">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="1.0" layoutY="87.0" text="Several Self-Test" textFill="#8393a5" />
+                        <Rectangle fx:id="rec1" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="449.0" layoutY="142.0" stroke="#e6e7e8" strokeType="INSIDE" width="834.0" />
+                        <Label layoutX="55.0" layoutY="162.0" text="자가진단명" textFill="#3d66ec">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutY="598.0" text="© 2019 MyData Health Data Management" textFill="#8393a5" />
+                        <ImageView fitHeight="22.0" fitWidth="98.0" layoutX="736.0" layoutY="596.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../util/images/tail_logo.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="insertBtn" layoutX="742.0" layoutY="106.0" mnemonicParsing="false" onAction="#clickInsertBtn" prefHeight="30.0" prefWidth="86.429" style="-fx-background-color: #3d66ec;" text="INSERT" textFill="WHITE">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="title" layoutX="121.0" layoutY="158.0" prefHeight="23.0" prefWidth="100.0" />
+                        <TextField fx:id="mun1" layoutX="121.0" layoutY="198.0" prefWidth="300.0" />
+                        <Label layoutX="55.0" layoutY="202.0" text="문제1" textFill="#3d66ec">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="mun2" layoutX="121.0" layoutY="238.0" prefWidth="300.0" />
+                        <Label layoutX="55.0" layoutY="242.0" text="문제2" textFill="#3d66ec">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="mun3" layoutX="121.0" layoutY="278.0" prefWidth="300.0" />
+                        <Label layoutX="55.0" layoutY="282.0" text="문제3" textFill="#3d66ec">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="mun4" layoutX="121.0" layoutY="318.0" prefWidth="300.0" />
+                        <Label layoutX="55.0" layoutY="322.0" text="문제4" textFill="#3d66ec">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="mun5" layoutX="121.0" layoutY="358.0" prefWidth="300.0" />
+                        <Label layoutX="55.0" layoutY="362.0" text="문제5" textFill="#3d66ec">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="mun6" layoutX="121.0" layoutY="398.0" prefWidth="300.0" />
+                        <Label layoutX="55.0" layoutY="402.0" text="문제6" textFill="#3d66ec">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="mun7" layoutX="121.0" layoutY="438.0" prefWidth="300.0" />
+                        <Label layoutX="55.0" layoutY="442.0" text="문제7" textFill="#3d66ec">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="mun8" layoutX="121.0" layoutY="478.0" prefWidth="300.0" />
+                        <Label layoutX="55.0" layoutY="482.0" text="문제8" textFill="#3d66ec">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="mun9" layoutX="121.0" layoutY="518.0" prefWidth="300.0" />
+                        <Label layoutX="55.0" layoutY="522.0" text="문제9" textFill="#3d66ec">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="mun10" layoutX="121.0" layoutY="558.0" prefWidth="300.0" />
+                        <Label layoutX="55.0" layoutY="562.0" text="문제10" textFill="#3d66ec">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="mun11" layoutX="520.0" layoutY="198.0" prefWidth="300.0" />
+                        <Label layoutX="454.0" layoutY="202.0" text="문제11" textFill="#3d66ec">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="mun12" layoutX="520.0" layoutY="238.0" prefWidth="300.0" />
+                        <Label layoutX="454.0" layoutY="242.0" text="문제12" textFill="#3d66ec">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="mun13" layoutX="520.0" layoutY="278.0" prefWidth="300.0" />
+                        <Label layoutX="454.0" layoutY="282.0" text="문제13" textFill="#3d66ec">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="mun14" layoutX="520.0" layoutY="318.0" prefWidth="300.0" />
+                        <Label layoutX="454.0" layoutY="322.0" text="문제14" textFill="#3d66ec">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="mun15" layoutX="520.0" layoutY="358.0" prefWidth="300.0" />
+                        <Label layoutX="454.0" layoutY="362.0" text="문제15" textFill="#3d66ec">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="mun16" layoutX="520.0" layoutY="398.0" prefWidth="300.0" />
+                        <Label layoutX="454.0" layoutY="402.0" text="문제16" textFill="#3d66ec">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="mun17" layoutX="520.0" layoutY="438.0" prefWidth="300.0" />
+                        <Label layoutX="454.0" layoutY="442.0" text="문제17" textFill="#3d66ec">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="mun18" layoutX="520.0" layoutY="478.0" prefWidth="300.0" />
+                        <Label layoutX="454.0" layoutY="482.0" text="문제18" textFill="#3d66ec">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="mun19" layoutX="520.0" layoutY="518.0" prefWidth="300.0" />
+                        <Label layoutX="454.0" layoutY="522.0" text="문제19" textFill="#3d66ec">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="mun20" layoutX="520.0" layoutY="558.0" prefWidth="300.0" />
+                        <Label layoutX="454.0" layoutY="562.0" text="문제20" textFill="#3d66ec">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="234.0" layoutY="162.0" text="결과(고)" textFill="#3d66ec">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="resultGo" layoutX="286.0" layoutY="158.0" />
+                        <Label layoutX="434.0" layoutY="162.0" text="결과(중)" textFill="#3d66ec">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="resultJoung" layoutX="483.0" layoutY="158.0" />
+                        <Label layoutX="633.0" layoutY="162.0" text="결과(저)" textFill="#3d66ec">
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="resultJu" layoutX="682.0" layoutY="158.0" />
+                     </children>
+                  </Pane>
+               </children>
+               <padding>
+                  <Insets left="80.0" right="80.0" top="40.0" />
+               </padding>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

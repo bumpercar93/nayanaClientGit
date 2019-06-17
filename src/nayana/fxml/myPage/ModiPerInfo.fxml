@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="685.0" prefWidth="1300.0" style="-fx-background-color: #f6f9fc;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nayana.controller.myPage.ModiPerInfoController">
+   <children>
+      <VBox prefHeight="658.0" prefWidth="1291.0">
+         <children>
+            <Pane>
+               <children>
+                  <Label text="Account Adjust" textFill="#8393a5" />
+                  <Label layoutY="60.0" text="회원 정보 수정" textFill="#51637b">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1.0" layoutY="87.0" text="Member Account Adjust" textFill="#8393a5" />
+                  <Button fx:id="registBtn" layoutX="950.0" layoutY="135.0" mnemonicParsing="false" onAction="#regist" prefHeight="30.0" prefWidth="85.0" style="-fx-background-color: #3d66ec;" text="수정" textFill="WHITE">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+                  <Label layoutY="598.0" text="© 2019 MyData Health Data Management" textFill="#8393a5" />
+                  <ImageView fitHeight="22.0" fitWidth="98.0" layoutX="736.0" layoutY="596.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../util/images/tail_logo.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="passTxt" layoutX="1.0" layoutY="135.0" prefHeight="32.0" prefWidth="834.0" promptText="수정할 비밀번호를 입력하세요" style="-fx-background-color: #fff; -fx-border-color: #d5d9dd; -fx-border-radius: 3;">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </TextField>
+                  <TextField fx:id="passTxtCh" layoutX="-2.0" layoutY="201.0" prefHeight="32.0" prefWidth="834.0" promptText="수정할 비밀번호를 다시 입력하세요" style="-fx-background-color: #fff; -fx-border-color: #d5d9dd; -fx-border-radius: 3;">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </TextField>
+                  <TextField fx:id="telTxt" layoutX="1.0" layoutY="273.0" prefHeight="32.0" prefWidth="834.0" promptText="수정할 휴대폰 번호를 입력하세요" style="-fx-background-color: #fff; -fx-border-color: #d5d9dd; -fx-border-radius: 3;">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </TextField>
+                  <TextField fx:id="siTxt" layoutX="1.0" layoutY="345.0" prefHeight="32.0" prefWidth="422.0" promptText="수정할 시를 입력하세요 (ex. 대전,광주,대구)" style="-fx-background-color: #fff; -fx-border-color: #d5d9dd; -fx-border-radius: 3;">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </TextField>
+                  <TextField fx:id="guTxt" layoutX="438.0" layoutY="345.0" prefHeight="32.0" prefWidth="395.0" promptText="수정할 구를 입력하세요(ex.중구,대덕구,서구)" style="-fx-background-color: #fff; -fx-border-color: #d5d9dd; -fx-border-radius: 3;">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </TextField>
+                  <Button fx:id="withdrawBtn" layoutX="950.0" layoutY="224.0" mnemonicParsing="false" onAction="#withdrawBtnClicked" prefHeight="30.0" prefWidth="85.0" style="-fx-background-color: #3d66ec;" text="탈퇴" textFill="WHITE">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="regTel" layoutX="1.0" layoutY="305.0" prefHeight="40.0" prefWidth="834.0" />
+                  <Label fx:id="regPass" layoutX="1.0" layoutY="165.0" prefHeight="40.0" prefWidth="834.0" />
+                  <Label fx:id="regGu" layoutX="438.0" layoutY="377.0" prefHeight="40.0" prefWidth="395.0" />
+                  <Label fx:id="regPassCh" layoutX="-2.0" layoutY="233.0" prefHeight="40.0" prefWidth="834.0" />
+                  <Label fx:id="regSi" layoutX="1.0" layoutY="377.0" prefHeight="40.0" prefWidth="422.0" />
+                  <TextField fx:id="mailTxt" layoutX="-2.0" layoutY="417.0" prefHeight="32.0" prefWidth="834.0" promptText="수정할 이메일을 입력하세요" style="-fx-background-color: #fff; -fx-border-color: #d5d9dd; -fx-border-radius: 3;">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </TextField>
+                  <Label fx:id="regMail" layoutX="-2.0" layoutY="449.0" prefHeight="40.0" prefWidth="834.0" />
+                  <Button fx:id="cancelBtn1" layoutX="950.0" layoutY="307.0" mnemonicParsing="false" onAction="#cancel" prefHeight="30.0" prefWidth="85.0" style="-fx-background-color: #3d66ec;" text="취소" textFill="WHITE">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+         <padding>
+            <Insets left="80.0" right="80.0" top="40.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="685.0" prefWidth="996.0" style="-fx-background-color: #f6f9fc;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nayana.controller.mydataPage.SelectMyDataController">
+   <children>
+      <VBox>
+         <children>
+            <Pane>
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="50.0" layoutY="402.0" stroke="#e6e7e8" strokeType="INSIDE" width="834.0" />
+                  <Label text="HEALTH DATA CHECK" textFill="#8393a5" />
+                  <Label layoutY="60.0" text="건강데이터 조회 및 활용" textFill="#51637b">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1.0" layoutY="87.0" text="Health data retrieval and utilization" textFill="#8393a5" />
+                  <Label layoutY="598.0" text="© 2019 MyData Health Data Management" textFill="#8393a5" />
+                  <ImageView fitHeight="22.0" fitWidth="98.0" layoutX="736.0" layoutY="596.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../util/images/tail_logo.png" />
+                     </image>
+                  </ImageView>
+                  <CheckBox fx:id="name" layoutX="10.0" layoutY="140.0" mnemonicParsing="false" text="이름" />
+                  <CheckBox fx:id="tel" layoutX="10.0" layoutY="290.0" mnemonicParsing="false" text="전화번호" />
+                  <CheckBox fx:id="gender" layoutX="10.0" layoutY="170.0" mnemonicParsing="false" text="성별" />
+                  <CheckBox fx:id="regNo" layoutX="10.0" layoutY="230.0" mnemonicParsing="false" text="주민등록번호" />
+                  <CheckBox fx:id="age" layoutX="10.0" layoutY="200.0" mnemonicParsing="false" text="나이" />
+                  <CheckBox fx:id="addr" layoutX="10.0" layoutY="260.0" mnemonicParsing="false" text="주소" />
+                  <CheckBox fx:id="inbodyScore" layoutX="140.0" layoutY="140.0" mnemonicParsing="false" text="인바디점수" />
+                  <CheckBox fx:id="mbRate" layoutX="140.0" layoutY="170.0" mnemonicParsing="false" text="기초대사량" />
+                  <CheckBox fx:id="height" layoutX="140.0" layoutY="200.0" mnemonicParsing="false" text="키" />
+                  <CheckBox fx:id="weight" layoutX="140.0" layoutY="230.0" mnemonicParsing="false" text="체중" />
+                  <CheckBox fx:id="bmi" layoutX="140.0" layoutY="260.0" mnemonicParsing="false" text="BMI" />
+                  <CheckBox fx:id="muscle" layoutX="270.0" layoutY="140.0" mnemonicParsing="false" text="골격근량" />
+                  <CheckBox fx:id="fat" layoutX="270.0" layoutY="170.0" mnemonicParsing="false" text="체지방량" />
+                  <CheckBox fx:id="fatRate" layoutX="270.0" layoutY="200.0" mnemonicParsing="false" text="체지방률" />
+                  <CheckBox fx:id="abdRate" layoutX="270.0" layoutY="230.0" mnemonicParsing="false" text="복부지방률" />
+                  <CheckBox fx:id="dssName" layoutX="400.0" layoutY="140.0" mnemonicParsing="false" text="진단병명" />
+                  <CheckBox fx:id="afterOpinion" layoutX="400.0" layoutY="170.0" mnemonicParsing="false" text="향후치료의견" />
+                  <CheckBox fx:id="dssDate" layoutX="400.0" layoutY="200.0" mnemonicParsing="false" text="진단발병일" />
+                  <CheckBox fx:id="opName" disable="true" layoutX="660.0" layoutY="140.0" mnemonicParsing="false" text="수술진단명" />
+                  <CheckBox fx:id="opPart" disable="true" layoutX="660.0" layoutY="170.0" mnemonicParsing="false" text="수술입원과" />
+                  <CheckBox fx:id="opHZDate" disable="true" layoutX="660.0" layoutY="200.0" mnemonicParsing="false" text="수술입원일자" />
+                  <CheckBox fx:id="opCon" disable="true" layoutX="660.0" layoutY="230.0" mnemonicParsing="false" text="수술진단내용" />
+                  <CheckBox fx:id="opDate" disable="true" layoutX="660.0" layoutY="260.0" mnemonicParsing="false" text="수술일" />
+                  <CheckBox fx:id="opDrName" disable="true" layoutX="660.0" layoutY="290.0" mnemonicParsing="false" text="수술의사성명" />
+                  <CheckBox fx:id="medicine" layoutX="530.0" layoutY="140.0" mnemonicParsing="false" text="의약품명칭" />
+                  <CheckBox fx:id="dosesMedi" layoutX="530.0" layoutY="170.0" mnemonicParsing="false" text="1회투약량" />
+                  <CheckBox fx:id="dosesNum" layoutX="530.0" layoutY="200.0" mnemonicParsing="false" text="1일투여횟수" />
+                  <CheckBox fx:id="dosesDay" layoutX="530.0" layoutY="230.0" mnemonicParsing="false" text="총투약일수" />
+                  <CheckBox fx:id="usage" layoutX="530.0" layoutY="260.0" mnemonicParsing="false" text="처방용법" />
+                  <Label layoutX="481.0" layoutY="420.0" text="마지막 다운로드 일시" textFill="#8393a5">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="downloadBtn" layoutX="736.0" layoutY="412.0" mnemonicParsing="false" onAction="#clickDownloadBtn" prefHeight="30.0" prefWidth="86.429" style="-fx-background-color: #3d66ec;" text="DOWNLOAD" textFill="WHITE">
+                     <font>
+                        <Font size="12.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="downloadDate" layoutX="596.0" layoutY="420.0" prefHeight="14.0" prefWidth="127.0" textFill="#8393a5">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+         <padding>
+            <Insets left="80.0" right="80.0" top="40.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="656.0" prefWidth="294.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nayana.controller.mainPage.ChatBotController">
+   <children>
+      <HBox disable="true" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label layoutX="20.0" layoutY="30.0" text="Nayana ChatBot TToG">
+               <font>
+                  <Font size="17.0" />
+               </font></Label>
+         </children>
+      </HBox>
+      <Label style="-fx-font-size: 12;" text="궁금하신 사항을 챗봇에게 물어보세요" />
+      <HBox prefHeight="550.0" prefWidth="200.0">
+         <children>
+            <TextArea fx:id="txtArea" onKeyPressed="#sendChat" prefHeight="300.0" prefWidth="389.0" />
+         </children>
+      </HBox>
+      <HBox alignment="TOP_RIGHT" prefHeight="57.0" prefWidth="389.0" spacing="10.0">
+         <children>
+            <TextField fx:id="txtField" alignment="TOP_LEFT" onAction="#txtFieldClicked" prefHeight="35.0" prefWidth="219.0">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="30.0" top="10.0" />
+               </padding>
+            </TextField>
+            <Button fx:id="submitBtn" mnemonicParsing="false" onAction="#submitBtnClicked" text="전송">
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>

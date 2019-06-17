@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane prefHeight="800.0" prefWidth="715.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nayana.controller.loginPage.SignUpController">
+   <content>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="700.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="260.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../util/images/nayana.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="inputID" layoutX="200.0" layoutY="120.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="35.0" prefWidth="220.0" style="-fx-background-color: #ffffff; -fx-border-color: #cccccc;" />
+            <Label layoutX="200.0" layoutY="190.0" text="비밀번호">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="200.0" layoutY="280.0" text="비밀번호 재확인">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="inputName" layoutX="200.0" layoutY="390.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="35.0" prefWidth="300.0" style="-fx-border-color: #cccccc; -fx-background-color: #ffffff;" />
+            <Label layoutX="200.0" layoutY="370.0" text="이름">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="200.0" layoutY="460.0" text="성별">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="inputGender" layoutX="200.0" layoutY="480.0" prefHeight="35.0" prefWidth="300.0" promptText="성별" style="-fx-background-color: white; -fx-border-color: #cccccc;" />
+            <TextField fx:id="inputRegNo1" layoutX="200.0" layoutY="570.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="35.0" prefWidth="120.0" style="-fx-background-color: #ffffff; -fx-border-color: #cccccc;" />
+            <Label layoutX="200.0" layoutY="550.0" text="주민등록번호">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="inputRegNo2" layoutX="380.0" layoutY="570.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="35.0" prefWidth="120.0" style="-fx-background-color: #ffffff; -fx-border-color: #cccccc;" />
+            <Label layoutX="342.0" layoutY="575.0" text="ㅡ">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="inputTel" layoutX="200.0" layoutY="660.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="35.0" prefWidth="300.0" style="-fx-background-color: #ffffff; -fx-border-color: #cccccc;" />
+            <Label layoutX="200.0" layoutY="640.0" text="휴대폰 번호">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="inputMail" layoutX="200.0" layoutY="840.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="35.0" prefWidth="300.0" style="-fx-background-color: #ffffff; -fx-border-color: #cccccc;" />
+            <Label layoutX="200.0" layoutY="820.0" text="이메일">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="inputAddr1" layoutX="200.0" layoutY="750.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="35.0" prefWidth="120.0" style="-fx-background-color: #ffffff; -fx-border-color: #cccccc;" />
+            <Label layoutX="200.0" layoutY="730.0" text="주소">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextField fx:id="inputAddr2" layoutX="356.0" layoutY="750.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="35.0" prefWidth="120.0" style="-fx-background-color: #ffffff; -fx-border-color: #cccccc;" />
+            <Label layoutX="325.0" layoutY="760.0" text="시">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Label layoutX="485.0" layoutY="760.0" text="구">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <Button fx:id="signupBtn" layoutX="200.0" layoutY="930.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#clickSignupBtn" prefHeight="50.0" prefWidth="300.0" style="-fx-background-color: #3d66ec;" text="가입하기" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="checkIDBtn" layoutX="438.0" layoutY="120.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#clickCheckIDBtn" prefHeight="35.0" style="-fx-background-color: #3d66ec;" text="중복확인" textFill="WHITE" />
+            <Label layoutX="200.0" layoutY="100.0" text="아이디">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="inputPW" layoutX="200.0" layoutY="210.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="35.0" prefWidth="300.0" style="-fx-background-color: #ffffff; -fx-border-color: #cccccc;" />
+            <PasswordField fx:id="inputRePW" layoutX="200.0" layoutY="300.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="35.0" prefWidth="300.0" style="-fx-border-color: #cccccc; -fx-background-color: #ffffff;" />
+            <Label fx:id="regID" layoutX="200.0" layoutY="160.0" prefHeight="30.0" prefWidth="300.0" />
+            <Label fx:id="regPW" layoutX="200.0" layoutY="250.0" prefHeight="30.0" prefWidth="300.0" />
+            <Label fx:id="regRePW" layoutX="200.0" layoutY="340.0" prefHeight="30.0" prefWidth="300.0" />
+            <Label fx:id="regName" layoutX="200.0" layoutY="430.0" prefHeight="30.0" prefWidth="300.0" />
+            <Label fx:id="regGender" layoutX="200.0" layoutY="520.0" prefHeight="30.0" prefWidth="300.0" />
+            <Label fx:id="regRegNo1" layoutX="200.0" layoutY="610.0" prefHeight="30.0" prefWidth="120.0" />
+            <Label fx:id="regTel" layoutX="200.0" layoutY="700.0" prefHeight="30.0" prefWidth="300.0" />
+            <Label fx:id="regAddr1" layoutX="200.0" layoutY="790.0" prefWidth="120.0" />
+            <Label fx:id="regMail" layoutX="200.0" layoutY="880.0" prefWidth="300.0" />
+            <Label fx:id="regRegNo2" layoutX="380.0" layoutY="610.0" prefHeight="30.0" prefWidth="120.0" />
+            <Label fx:id="regAddr2" layoutX="355.0" layoutY="790.0" prefWidth="120.0" />
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>

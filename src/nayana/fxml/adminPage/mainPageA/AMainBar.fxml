@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="topBorderpane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nayana.controller.adminPage.mainPageA.AMainBarController">
+   <top>
+      <VBox prefHeight="115.0" prefWidth="1300.0" BorderPane.alignment="CENTER">
+         <children>
+            <ToolBar prefHeight="60.0" prefWidth="1300.0" style="-fx-background-color: #3d66ec;">
+               <items>
+                  <HBox>
+                     <children>
+                        <ImageView fx:id="maingogoTxt" fitHeight="30.0" fitWidth="123.0" onMouseClicked="#MainGOGO" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../util/images/main_logo.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets top="17.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label opacity="0.8" style="-fx-text-fill: #f0f2f9;" text="MyData Health Data Admin Management">
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets top="26.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets right="460.0" />
+                     </padding>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <ImageView fitHeight="60.0" fitWidth="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../util/images/main_top_line.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="28.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="60.0" fitWidth="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../util/images/user_icon_01.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <ImageView fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../util/images/user_icon_01.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <padding>
+                        <Insets left="20.0" top="17.0" />
+                     </padding>
+                  </HBox>
+                  <VBox>
+                     <children>
+                        <Label fx:id="nameTxt" style="-fx-text-fill: #fff;" text="Park Seo Kyoung" />
+                        <Label style="-fx-text-fill: #84adfb;" text="NAYANA Admin">
+                           <font>
+                              <Font size="11.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="8.0" top="14.0" />
+                     </padding>
+                  </VBox>
+                  <HBox>
+                     <children>
+                        <ImageView fx:id="logoutBtn" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#Logout" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../util/images/btn_logout.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <padding>
+                        <Insets left="25.0" right="30.0" top="17.0" />
+                     </padding>
+                  </HBox>
+               </items>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </ToolBar>
+            <HBox depthTest="DISABLE" prefHeight="55.0" prefWidth="1300.0" style="-fx-effect: dropshadow(three-pass-box , rgba(193, 202, 233, 0.1) , 5, 0 , 0 ,3); -fx-background-color: #fff;">
+               <children>
+                  <MenuButton fx:id="accountManageList" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-text-fill: #f00;" text="계정관리">
+                     <items>
+                        <MenuItem fx:id="memberManageMenu" mnemonicParsing="false" onAction="#memberManage" text="회원 계정 관리" />
+                        <MenuItem fx:id="adminManageMenu" mnemonicParsing="false" onAction="#adminManage" text="관리자 계정 관리" />
+                     </items>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Noto Sans CJK KR DemiLight" size="13.0" />
+                     </font>
+                  </MenuButton>
+                  <MenuButton fx:id="healthGiveList" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-text-fill: #8393a5;" text="건강 정보 제공 관리">
+                     <items>
+                        <MenuItem fx:id="foodCucheonMenu" mnemonicParsing="false" onAction="#FoodCucheon" text="맞춤식단 관리" />
+                        <MenuItem fx:id="sportsCucheonMenu" mnemonicParsing="false" onAction="#SportsCucheon" text="추천운동 관리" />
+                        <MenuItem fx:id="meTestMenu" mnemonicParsing="false" onAction="#MyTest" text="자가진단 관리" />
+                     </items>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Noto Sans CJK KR DemiLight" size="13.0" />
+                     </font>
+                  </MenuButton>
+                  <MenuButton fx:id="communityList" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-text-fill: #8393a5;" text="커뮤니티 관리">
+                     <items>
+                        <MenuItem fx:id="HealthcareDataMenu" mnemonicParsing="false" onAction="#HealthcareData" text="헬스케어정보 관리" />
+                        <MenuItem fx:id="noticeMenu" mnemonicParsing="false" onAction="#Notice" text="공지사항 관리" />
+                     </items>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Noto Sans CJK KR DemiLight" size="13.0" />
+                     </font>
+                  </MenuButton>
+               </children>
+               <padding>
+                  <Insets left="20.0" top="14.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+</BorderPane>

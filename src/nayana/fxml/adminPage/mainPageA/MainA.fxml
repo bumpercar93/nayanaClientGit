@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPane" prefHeight="800.0" prefWidth="1300.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nayana.controller.adminPage.mainPageA.MainAController">
+   <top>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <ToolBar prefHeight="60.0" prefWidth="1300.0" style="-fx-background-color: #3d66ec;">
+              <items>
+                  <HBox>
+                     <children>
+                        <ImageView fitHeight="30.0" fitWidth="123.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../util/images/main_logo.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets top="17.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label opacity="0.8" style="-fx-text-fill: #f0f2f9;" text="MyData Health Data Admin Management">
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets top="27.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets right="560.0" />
+                     </padding>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <ImageView fitHeight="60.0" fitWidth="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../util/images/main_top_line.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="28.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="60.0" fitWidth="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../util/images/user_icon_01.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <ImageView fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../util/images/user_icon_01.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets top="2.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                     <padding>
+                        <Insets left="20.0" top="17.0" />
+                     </padding>
+                  </HBox>
+                  <VBox>
+                     <children>
+                        <Label fx:id="nameTxt" style="-fx-text-fill: #fff;" text="Park Seo Kyoung">
+                           <VBox.margin>
+                              <Insets top="2.0" />
+                           </VBox.margin></Label>
+                        <Label style="-fx-text-fill: #84adfb;" text="NAYANA Admin">
+                           <font>
+                              <Font size="11.0" />
+                           </font></Label>
+                     </children>
+                     <padding>
+                        <Insets left="8.0" top="14.0" />
+                     </padding>
+                  </VBox>
+                  <HBox>
+                     <children>
+                        <ImageView fx:id="logoutBtn" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#Logout" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../util/images/btn_logout.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets top="2.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                     <padding>
+                        <Insets left="25.0" right="30.0" top="17.0" />
+                     </padding>
+                  </HBox>
+              </items>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </ToolBar>
+            <HBox depthTest="DISABLE" prefHeight="55.0" prefWidth="1300.0" style="-fx-effect: dropshadow(three-pass-box , rgba(193, 202, 233, 0.1) , 5, 0 , 0 ,3); -fx-background-color: #fff;">
+               <children>
+                  <Button fx:id="adminManageBtn" mnemonicParsing="false" onAction="#adminManage" style="-fx-background-color: transparent;" text="계정 관리">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="30.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="FoodCucheonBtn" mnemonicParsing="false" onAction="#FoodCucheon" style="-fx-background-color: transparent;" text="맞춤식단 관리">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="30.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="SportsCucheonBtn" mnemonicParsing="false" onAction="#SportsCucheon" style="-fx-background-color: transparent;" text="추천운동 관리">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="30.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="MyTestBtn" mnemonicParsing="false" onAction="#MyTest" style="-fx-background-color: transparent;" text="자가진단 관리">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="30.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="HealthcareDataBtn" mnemonicParsing="false" onAction="#HealthcareData" style="-fx-background-color: transparent;" text="헬스케어 게시판 관리">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="30.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="NoticeBtn" mnemonicParsing="false" onAction="#Notice" style="-fx-background-color: transparent;" text="공지사항 관리">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="30.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets left="20.0" top="14.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <AnchorPane prefHeight="685.0" prefWidth="1300.0" style="-fx-background-color: #f6f9fc;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="685.0" prefWidth="1300.0">
+               <children>
+                  <Pane style="-fx-background-color: transparent;">
+                     <children>
+                        <Label layoutY="599.0" text="© 2019 MyData Health Data Management" textFill="#8393a5" />
+                        <BarChart fx:id="siGraph" layoutY="298.0" prefHeight="292.0" prefWidth="738.0" title="지역별 프로그램 사용 비율">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" fx:id="xAxis" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis fx:id="yAxis" side="LEFT" />
+                          </yAxis>
+                        </BarChart>
+                        <LineChart fx:id="ageGraph" layoutY="33.0" prefHeight="273.0" prefWidth="1183.0" title="연령별 프로그램 사용 비율">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                        </LineChart>
+                        <PieChart fx:id="genderGraph" layoutX="761.0" layoutY="298.0" prefHeight="284.0" prefWidth="419.0" title="남녀 프로그램 사용 분포" />
+                        <Label text="기초 건강 정보" textFill="#8393a5">
+                           <font>
+                              <Font name="Noto Sans CJK KR Medium" size="14.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="22.0" fitWidth="98.0" layoutX="1090.0" layoutY="590.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../util/images/tail_logo.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="2.0" layoutY="326.0" text="\%" />
+                        <Label layoutX="2.0" layoutY="61.0" text="\%" />
+                     </children>
+                  </Pane>
+               </children>
+               <padding>
+                  <Insets left="60.0" right="60.0" top="40.0" />
+               </padding>
+            </HBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </AnchorPane>
+   </center>
+</BorderPane>

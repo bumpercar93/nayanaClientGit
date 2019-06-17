@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.chart.StackedBarChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderPane" prefHeight="800.0" prefWidth="1300.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nayana.controller.mainPage.MainController">
+   <right>
+      <AnchorPane prefWidth="294.0" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane layoutX="10.0" layoutY="7.0">
+               <children>
+                  <Label layoutX="12.0" layoutY="25.0" text="Nayana ChatBot TToG" textFill="#5d6c83">
+                     <font>
+                        <Font name="Noto Sans CJK KR Medium" size="17.0" />
+                     </font></Label>
+                  <Label layoutX="12.0" layoutY="53.0" text="궁금하신 사항을 Nayana 챗봇에게 물어보세요" textFill="#828d9c">
+                     <font>
+                        <Font name="Noto Sans CJK KR DemiLight" size="12.0" />
+                     </font></Label>
+                  <Line endX="253.0" endY="0.9999847412109375" fill="#f0f2f5" layoutX="20.0" layoutY="90.0" startX="-13.0" startY="1.0" stroke="#c3c8d0" strokeMiterLimit="5.0" />
+               </children>
+            </Pane>
+            <ImageView fitHeight="21.0" fitWidth="28.0" layoutX="20.0" layoutY="119.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../util/images/chat_icon_01.png" />
+               </image>
+            </ImageView>
+            <TextArea fx:id="chatbotTxtArea" layoutX="18.0" layoutY="148.0" prefHeight="472.0" prefWidth="260.0" style="-fx-background-color: #f6f9fc;" />
+            <TextField fx:id="chatbotTxtField" layoutX="14.0" layoutY="635.0" prefHeight="23.0" prefWidth="219.0" />
+            <Button fx:id="chatbotBtn" layoutX="241.0" layoutY="635.0" mnemonicParsing="false" onAction="#chatbotBtnClicked" style="-fx-background-color: #3d66ec; -fx-text-fill: white;" text="전송" />
+            <Label layoutX="56.0" layoutY="126.0" text="Nayana ChatBot" textFill="#3e66ec">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </right>
+   <top>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <ToolBar prefHeight="60.0" prefWidth="1300.0" style="-fx-background-color: #3d66ec;">
+              <items>
+                  <HBox>
+                     <children>
+                        <ImageView fx:id="mainlogo" fitHeight="30.0" fitWidth="123.0" onMouseClicked="#MainGoGo" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../util/images/main_logo.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets top="17.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label opacity="0.8" style="-fx-text-fill: #f0f2f9;" text="MyData Health Data Management">
+                           <padding>
+                              <Insets left="10.0" />
+                           </padding>
+                           <HBox.margin>
+                              <Insets top="26.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="12.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets right="505.0" />
+                     </padding>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <ImageView fitHeight="60.0" fitWidth="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../util/images/main_top_line.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="28.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fx:id="miseImg1" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../util/images/sad.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets top="15.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label fx:id="miseTxt1" style="-fx-text-fill: #fff;" text="공기 나쁨">
+                           <padding>
+                              <Insets left="10.0" top="21.0" />
+                           </padding>
+                           <font>
+                              <Font name="Noto Sans CJK KR Medium" size="13.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="60.0" fitWidth="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../util/images/user_icon_01.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="30.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <HBox>
+                     <children>
+                        <ImageView fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../util/images/user_icon_01.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <padding>
+                        <Insets left="20.0" top="17.0" />
+                     </padding>
+                  </HBox>
+                  <VBox>
+                     <children>
+                        <Label fx:id="nameTxt" style="-fx-text-fill: #fff;" text="Park Seo Kyoung" />
+                        <Label style="-fx-text-fill: #84adfb;" text="NAYANA User">
+                           <font>
+                              <Font size="11.0" />
+                           </font></Label>
+                     </children>
+                     <padding>
+                        <Insets left="8.0" top="14.0" />
+                     </padding>
+                  </VBox>
+                  <HBox>
+                     <children>
+                        <ImageView fx:id="logoutBtn" fitHeight="70.0" fitWidth="60.0" onMouseClicked="#Logout" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../util/images/btn_logout.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <padding>
+                        <Insets left="25.0" right="30.0" top="17.0" />
+                     </padding>
+                  </HBox>
+              </items>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </ToolBar>
+            <HBox depthTest="DISABLE" prefHeight="55.0" prefWidth="1300.0" style="-fx-effect: dropshadow(three-pass-box , rgba(193, 202, 233, 0.1) , 5, 0 , 0 ,3); -fx-background-color: #fff;">
+               <children>
+                  <MenuButton fx:id="healthSearchList" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-text-fill: #f00;" text="건강데이터 조회">
+                    <items>
+                      <MenuItem fx:id="healthSearchMenu" mnemonicParsing="false" onAction="#healthSearch" text="건강데이터 조회 및 다운로드" />
+                      <MenuItem fx:id="healthTotalMenu" mnemonicParsing="false" onAction="#healthTotal" text="나의 건강데이터 다운로드" />
+                        <MenuItem fx:id="Solution" mnemonicParsing="false" onAction="#clickSolution" text="건강테이터 솔루션" />
+                    </items>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Noto Sans CJK KR DemiLight" size="13.0" />
+                     </font>
+                  </MenuButton>
+                  <MenuButton fx:id="healthGiveList" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-text-fill: #8393a5;" text="건강 정보 제공">
+                     <items>
+                        <MenuItem fx:id="foodCucheonMenu" mnemonicParsing="false" onAction="#foodCucheon" text="맞춤식단" />
+                        <MenuItem fx:id="sportsCucheonMenu" mnemonicParsing="false" onAction="#sprotsCucheon" text="추천운동" />
+                        <MenuItem fx:id="meTestMenu" mnemonicParsing="false" onAction="#meTest" text="자가진단" />
+                     </items>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Noto Sans CJK KR DemiLight" size="13.0" />
+                     </font>
+                  </MenuButton>
+                  <MenuButton fx:id="communityList" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-text-fill: #8393a5;" text="커뮤니티">
+                     <items>
+                        <MenuItem fx:id="HealthcareDataMenu" mnemonicParsing="false" onAction="#healthcareData" text="헬스케어정보" />
+                        <MenuItem fx:id="noticeMenu" mnemonicParsing="false" onAction="#notice" text="공지사항" />
+                     </items>
+                     <HBox.margin>
+                        <Insets right="20.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Noto Sans CJK KR DemiLight" size="13.0" />
+                     </font>
+                  </MenuButton>
+                  <MenuButton fx:id="mypageList" mnemonicParsing="false" style="-fx-background-color: transparent; -fx-text-fill: #8393a5;" text="마이페이지">
+                     <font>
+                        <Font name="Noto Sans CJK KR DemiLight" size="13.0" />
+                     </font>
+                     <items>
+                        <MenuItem fx:id="myPageMenu" mnemonicParsing="false" onAction="#myPage" text="마이페이지" />
+                     </items>
+                  </MenuButton>
+               </children>
+               <padding>
+                  <Insets left="20.0" top="14.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <VBox style="-fx-background-color: #f6f9fc;" BorderPane.alignment="CENTER">
+         <children>
+            <HBox>
+               <children>
+                  <Label text="기초 건강 정보" textFill="#8393a5">
+                     <font>
+                        <Font name="Noto Sans CJK KR Medium" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="8.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox>
+               <children>
+                  <Pane>
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5d8ded" height="70.0" stroke="#5185e4" strokeType="INSIDE" width="130.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff857a" height="70.0" layoutX="140.0" stroke="#f27b72" strokeType="INSIDE" width="269.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="70.0" layoutX="419.0" stroke="#eff2f6" strokeType="INSIDE" width="457.0" />
+                        <Label layoutX="70.0" layoutY="25.0" text="AGE" textFill="#9ebdfa">
+                           <font>
+                              <Font name="Noto Sans CJK KR DemiLight" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="ageTxt" layoutX="29.0" layoutY="10.0" text="23" textFill="WHITE">
+                           <font>
+                              <Font name="Noto Sans CJK KR Light" size="31.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="47.0" fitWidth="2.0" layoutX="274.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../../../images/section_line.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="tallTxt" layoutX="156.0" layoutY="10.0" text="163" textFill="WHITE">
+                           <font>
+                              <Font name="Noto Sans CJK KR Light" size="31.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="234.0" layoutY="24.0" text="cm" textFill="#ffb1ac">
+                           <font>
+                              <Font name="Noto Sans CJK KR Regular" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="weightTxt" layoutX="288.0" layoutY="10.0" text="53" textFill="WHITE">
+                           <font>
+                              <Font name="Noto Sans CJK KR Light" size="31.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="360.0" layoutY="24.0" text="kg" textFill="#ffb1ac">
+                           <font>
+                              <Font name="Noto Sans CJK KR Regular" size="19.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="miseImg2" fitHeight="47.0" fitWidth="30.0" layoutX="450.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../util/images/sad_black.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="490.0" layoutY="23.0" text="미세먼지 정도" textFill="#51637b">
+                           <font>
+                              <Font name="Noto Sans CJK KR Regular" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="miseTxt2" layoutX="609.0" layoutY="23.0" text="나쁨" textFill="#ff847c">
+                           <font>
+                              <Font name="Noto Sans CJK KR Regular" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="655.0" layoutY="21.0" text="미세먼지 농도는" textFill="#9facbd">
+                           <font>
+                              <Font name="Noto Sans CJK KR Regular" size="11.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="miseSize" layoutX="739.0" layoutY="21.0" text="69" textFill="#66778d">
+                           <font>
+                              <Font name="Noto Sans CJK KR Regular" size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="792.0" layoutY="21.0" text="입니다." textFill="#9facbd">
+                           <font>
+                              <Font name="Noto Sans CJK KR Regular" size="11.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="miseComent" layoutX="655.0" layoutY="37.0" text="오늘은 마스크를 착용하세요" textFill="#9facbd">
+                           <font>
+                              <Font name="Noto Sans CJK KR Regular" size="11.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="761.0" layoutY="21.0" text="㎍/m³" textFill="#9facbd">
+                           <font>
+                              <Font name="Noto Sans CJK KR Regular" size="9.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox>
+               <children>
+                  <Pane>
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="235.0" stroke="#eff2f6" strokeType="INSIDE" width="409.0" />
+                        <ImageView fitHeight="235.0" fitWidth="285.0" layoutX="419.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../util/images/main_section_01.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="30.0" layoutY="25.0" text="신체질량지수(BMI)" textFill="#51637b">
+                           <font>
+                              <Font name="Noto Sans CJK KR Medium" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="nameTxt1" layoutX="30.0" layoutY="58.0" text="박서경" textFill="#8894a1">
+                           <font>
+                              <Font name="Noto Sans CJK KR Medium" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="66.0" layoutY="58.0" text="님의 신체질량지수(BMI)" textFill="#9facbd">
+                           <font>
+                              <Font name="Noto Sans CJK KR DemiLight" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="bmiTxt" layoutX="30.0" layoutY="78.0" text="20.7(정상)" textFill="#ff8388">
+                           <font>
+                              <Font name="Noto Sans CJK KR DemiLight" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="118.0" layoutY="78.0" text="입니다. " textFill="#9facbd">
+                           <font>
+                              <Font name="Noto Sans CJK KR DemiLight" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="450.0" layoutY="25.0" text="권장 수면 시간" textFill="#51637b">
+                           <font>
+                              <Font name="Noto Sans CJK KR Medium" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="txtName3" layoutX="450.0" layoutY="50.0" text="박서경" textFill="#8894a1">
+                           <font>
+                              <Font name="Noto Sans CJK KR Medium" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="488.0" layoutY="50.0" text="님의 권장 수면은" textFill="#9facbd">
+                           <font>
+                              <Font name="Noto Sans CJK KR DemiLight" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="sleepTimeTxt" layoutX="590.0" layoutY="50.0" text="7 ~ 8" textFill="#ff8388">
+                           <font>
+                              <Font name="Noto Sans CJK KR DemiLight" size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="623.0" layoutY="50.0" text="시간입니다. " textFill="#9facbd">
+                           <font>
+                              <Font name="Noto Sans CJK KR DemiLight" size="13.0" />
+                           </font>
+                        </Label>
+                        <PieChart fx:id="sleepTimeGraph" layoutX="470.0" layoutY="66.0" prefHeight="163.0" prefWidth="269.0" />
+                        <ImageView fx:id="sportsCucheonImg" fitHeight="113.0" fitWidth="163.0" layoutX="714.0" onMouseClicked="#SportsCucheon" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../util/images/btn_exe.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="foodChucheonImg" fitHeight="112.0" fitWidth="163.0" layoutX="714.0" layoutY="123.0" onMouseClicked="#FoodCucheon" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../util/images/btn_diet.png" />
+                           </image>
+                        </ImageView>
+                        <StackedBarChart fx:id="bmiGraph" categoryGap="2.0" layoutX="193.0" layoutY="0" prefHeight="230.0" prefWidth="200.0">
+                          <xAxis>
+<!--                           	<NumberAxis lowerBound="0" upperBound="50" tickUnit="2" fx:id="xAxis"/> -->
+                            <CategoryAxis side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis lowerBound="0" side="LEFT" tickUnit="2" upperBound="50" />
+                          </yAxis>
+                        </StackedBarChart>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label text="공지사항 및 건강 정보" textFill="#8393a5">
+                     <font>
+                        <Font name="Noto Sans CJK KR Medium" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin></HBox>
+            <HBox>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+               <children>
+                  <Pane>
+                     <children>
+                        <TableView fx:id="gonziTable" onMouseClicked="#boardClick" prefHeight="150.0" prefWidth="264.0">
+                          <columns>
+                            <TableColumn fx:id="gongziTitle" prefWidth="260.0" style="-fx-border-width: 0 0 1 0; -fx-border-color: #d6dbe3;" text="제목" />
+                          </columns>
+                        </TableView>
+                        <VBox layoutX="262.0" style="-fx-border-color: #eff2f6;">
+                           <children>
+                              <ImageView fx:id="contentsImg1" fitHeight="122.0" fitWidth="144.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../../../util/images/photo_1.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="contentsTxt1" prefHeight="50.0" prefWidth="144.0" style="-fx-background-color: #fff; -fx-background-radius: 0 0 3 3;" text="곡물이 좋은 이유, 나는콩이 너무 싫어요..." wrapText="true">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="418.0" style="-fx-border-color: #eff2f6;">
+                           <children>
+                              <ImageView fx:id="contentsImg2" fitHeight="122.0" fitWidth="144.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../../../util/images/photo_2.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="contentsTxt2" prefHeight="50.0" prefWidth="144.0" style="-fx-background-color: #fff; -fx-background-radius: 0 0 3 3;" text="하루에 한잔 커피, 나는아메리카노가 좋아..." wrapText="true">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="575.0" style="-fx-border-color: #eff2f6;">
+                           <children>
+                              <ImageView fx:id="contentsImg3" fitHeight="122.0" fitWidth="144.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../../../util/images/photo_3.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="contentsTxt3" prefHeight="50.0" prefWidth="144.0" style="-fx-background-color: #fff; -fx-background-radius: 0 0 3 3;" text="곡물이 좋은 이유, 나는콩이 너무 싫어요..." wrapText="true">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox layoutX="731.0" style="-fx-border-color: #eff2f6;">
+                           <children>
+                              <ImageView fx:id="contentsImg4" fitHeight="122.0" fitWidth="144.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../../../util/images/photo_4.png" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="contentsTxt4" prefHeight="50.0" prefWidth="144.0" style="-fx-background-color: #fff; -fx-background-radius: 0 0 3 3;" text="곡물이 좋은 이유, 나는콩이 너무 싫어요..." wrapText="true">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                                 <font>
+                                    <Font size="12.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <Button fx:id="noticegogoBtn" layoutX="207.0" layoutY="151.0" mnemonicParsing="false" onAction="#noticegogo" style="-fx-background-color: #3d66ec;" text="더보기" textFill="WHITE" />
+                     </children>
+                  </Pane>
+               </children></HBox>
+            <HBox>
+               <children>
+                  <Pane prefWidth="996.0" style="-fx-background-color: transparent;">
+                     <children>
+                        <Label text="© 2019 MyData Health Data Management" textFill="#8393a5" />
+                        <ImageView fitHeight="22.0" fitWidth="98.0" layoutX="780.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../util/images/tail_logo.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Pane>
+               </children>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="60.0" right="60.0" top="40.0" />
+         </padding>
+      </VBox>
+   </center>
+</BorderPane>
