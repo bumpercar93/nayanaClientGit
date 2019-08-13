@@ -1,4 +1,4 @@
-NayanaClient
+NAYANA
 =====================
 ## 개요
 * MyData사업 + HealthCare
