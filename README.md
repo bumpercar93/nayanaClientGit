@@ -29,6 +29,7 @@ NayanaClient
 * SVN
 * SceneBuilder
 * Exsel
+* PDF
 * AQUERY TOOL
 * Oracle SQL Developer
 * Kakao Oven
@@ -73,9 +74,11 @@ NayanaClient
       * 아이디 주민번호 입력 후 일치하면 mail API를 통해 회원이 회원가입시 입력한 메일주소로 새로운 임시비밀번호 발송
    * 건강데이터 조회 및 다운로드
       * FTP서버를 통해 회원의 건강데이터 조회 및 다운로드 제공
+      * ITEXT API를 통해 PDF파일로 제공
    * 나의 건강데이터 다운로드
       * 현재 회원이 가지고 있는 건강데이터를 가공하여 제공
       * 회원이 원하는 항목을 선택하면 그에 맞는 건강데이터 제공
+      * POI API를 통해 Exsel파일로 제공
    * 건강데이터 솔루션
       * 회원의 건강데이터를 분석하여 개개인에게 맞는 솔루션을 제공
       * 사망원인, 필수 섭취 영양소, 좋은 음식 등
